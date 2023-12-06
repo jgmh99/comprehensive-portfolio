@@ -21,7 +21,8 @@
   width: 500px;
   height: 100%;
   min-height: 600px;
-  background: url("../../src/img/img2.png") 22% 0% no-repeat;
+  /* background: url("../src/img/img2.png") 22% 0% no-repeat; */
+  background: url(../src/img/img2.png);
   background-size: 900px auto;
   background-attachment: fixed;
   filter: brightness(100%);
