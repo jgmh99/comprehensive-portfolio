@@ -1,0 +1,33 @@
+.outer {
+    width: 100%;
+    height: 5px;
+    border: 1px solid red;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+.bar_p {
+    border: 1px solid green;
+    width: 100px; 
+    height: 100%;
+}
+.bar {
+    border: 1px solid blue;
+    background: blue;
+    width: 100px; 
+    transform: scale(1, 0);
+    transform-origin: right;
+
+    animation: bar 1s forwards;
+}
+
+.bar1 { width: 70%;}
+.bar2 { width: 80%;}
+.bar3 { width: 90%;}
+.bar4 { width: 100%;}
+.bar5 { width: 70%;}
+
+@keyframes bar {
+    0% { transform: scale(1,0);}
+    100% { transform: scale(1,1);}
+}

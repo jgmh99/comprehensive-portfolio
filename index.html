@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Jegal MinHyuk Portfolio</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/Skills.css">
+    <link rel="stylesheet" href="./css/skillbar.css">
+    <link rel="stylesheet" href="./css/works1.css">
+    <link rel="stylesheet" href="./css/works2.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script type='text/javascript' src='./js/jquery.mousewheel.min.js'></script>
+</head>
+<style>
+     
+</style>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="Header_container">
+            <div class="burger">
+                <div class="close_icon"></div>
+                <div class="open_icon"></div>
+            </div>
+            <nav class="right">
+                <ul id="menu">
+                    <a href="#0">
+                        <li id="menu0" data-menuanchor="0">INTRO</li>
+                    </a>
+                    <a href="#1">
+                        <li id="menu1" data-menuanchor="1">ABOUT</li>
+                    </a>
+                    <a href="#2">
+                        <li id="menu2" data-menuanchor="2">SKILLS</li>
+                    </a>
+                    <a href="#3">
+                        <li id="menu3" data-menuanchor="3">WORKS</li>
+                    </a>
+                    <a href="#4">
+                        <li id="menu4" data-menuanchor="4">CONTACT</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <div class="m_menu">
+            <ul>
+                <a href="#0">
+                    <li id="menu0" data-menuanchor="0">INTRO</li>
+                </a>
+                <a href="#1">
+                    <li id="menu1" data-menuanchor="1">ABOUT</li>
+                </a>
+                <a href="#2">
+                    <li id="menu2" data-menuanchor="2">SKILLS</li>
+                </a>
+                <a href="#3">
+                    <li id="menu3" data-menuanchor="3">WORKS</li>
+                </a>
+                <a href="#4">
+                    <li id="menu4" data-menuanchor="4">CONTACT</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <!-- FullPage SECTIONS -->
+    <div id="fullpage">
+        <!-- Intro 나오는 부분-->
+        <section class="section ct Intro" id="Intro">
+            <div id="typo_1">
+                <h1>Front End Portfolio</h1>
+                <h2>신입 웹개발자_제갈민혁</h2>
+            </div>
+            <div class="scroll">
+                <div></div>
+                <div></div>
+                <p>SCROLL DOWN</p>
+            </div>
+        </section>
+        <!-- About -->
+        <section class="section ct About" id="About">
+            <div class="About_container">
+                <div class="attbg"></div>
+                <div id="typo_3">
+                    <p>Me</p>
+                    <p class="word"><span class="quote">이름 : 제갈민혁 <br>생년월일 : 99.09.17</span></p>
+                    <p>Education / Experience</p>
+                    <p class="word"><span class="quote">2018.02 : 효원 고등학교 졸업<br>2022.01 ~ 2022.02 : (재)서울의과학연구소(인턴)<br>2023.12.27 : (디지털컨버전스)공공데이터 융합 자바개발자 양성과정A30(9) 수료<br>2024.02 : 세명대학교 정보통신학부 졸업예정</span></p>
+                    <p>CERIFICATE</p>
+                    <p class="word"><span class="quote">MOS</span></p>
+
+                    <ul class="tag_wrap">
+                        <li class="tag">#INFJ</li>
+                        <li class="tag">#꼼꼼함</li>
+                        <li class="tag">#섬세함</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Stacks -->
+        <section class="section ct Stacks" id="Stacks">
+            <canvas id="dotCanvas"></canvas>
+            <div class="grad top"></div>
+            <div class="grad bottom"></div>
+            <div class="Stacks_container">
+                <h1>SKILLS</h1>
+                <!-- <h2>아이콘에 마우스를 올리면 자세한 설명이 나옵니다.</h2> -->
+                <div id="frontendStack" class="stacks_wrap">
+                    <div class="subTitle frontend">
+                        <span>FRONT-END</span>
+                    </div>
+                    <div class="stack_container">
+                        <ul>
+                            <li>
+                                <img src="src/img/stack_icon/html5.png" alt="HTML5">
+                                <div>
+                                    <p>HTML5</p>
+                                    <p>웹접근성, 표준성을 준수하며 시멘틱태그를 이용해 마크업 할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/css3.png" alt="CSS3">
+                                <div>
+                                    <p>CSS3</p>
+                                    <p>position, display를 적절히 사용하여 반응형웹을 적용할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/js.png" alt="JS">
+                                <div>
+                                    <p>Javascript</p>
+                                    <p>Javascript의 배열, 메소드, DOM을 이해하며 다양한 상황에 적용할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/jquery.png" alt="JQuery">
+                                <div>
+                                    <p>JQuery</p>
+                                    <p>관련 라이브러리와 애니메이션, 여러 메소드들을 잘 활용할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/reactjs.png" alt="React.js">
+                                <div>
+                                    <p>React.js</p>
+                                    <p>React 구조와 여러가지 hook들을 잘 알고 있으며, 범용적이고 재사용가능한 컴포넌트 설계를 할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/ajax.png" alt="ajax">
+                                <div>
+                                    <p>Ajax</p>
+                                    <p>Ajax를 통해 웹 페이지의 속도,사용자의 경험 향상 시킬 수 있습니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="backendStack" class="stacks_wrap">
+                    <div class="subTitle frontend">
+                        <span>BACK-END</span>
+                    </div>
+                    <div class="stack_container">
+                        <ul>
+                            <li>
+                                <img src="src/img/stack_icon/spring.png" alt="HTML5">
+                                <div>
+                                    <p>Spring</p>
+                                    <p>spring</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/java.png" alt="CSS3">
+                                <div>
+                                    <p>Java</p>
+                                    <p>java</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/mysql.png" alt="JS">
+                                <div>
+                                    <p>MySql</p>
+                                    <p>높은 성능과, 높은 확장성을 가지고 있는 Mysql을 운영할 수 있습니다. </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/mybatis.png" alt="mybatis_logo">
+                                <div>
+                                    <p>MyBatis</p>
+                                    <p>데이버베이스의 접근성, 성능 향상 등 MyBatis를 활용 할 수 있습니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="toolStack" class="stacks_wrap">
+                    <div class="subTitle backend">
+                        <span>TOOL</span>
+                    </div>
+                    <div class="stack_container">
+                        <ul>
+                            <li>
+                                <img src="src/img/stack_icon/vscode.png" alt="VisualStudio code">
+                                <div>
+                                    <p>VS Code</p>
+                                    <p>주로 사용하는 툴이며, 편리한 확장프로그램들을 설치해 사용하고 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img id='height_icon' src="src/img/stack_icon/icons8-intellij-idea-48.png" alt="Figma">
+                                <div>
+                                    <p>inteliJ</p>
+                                    <p>JSP로 수정할떄 주로 사용합니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/git.png" alt="Git">
+                                <div>
+                                    <p>Git</p>
+                                    <p>commit, push, pull, clone 등 git 명령어를 사용하여 레파지토리에 접근할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="src/img/stack_icon/sourcetree.png" alt="Git">
+                                <div>
+                                    <p>SourceTree</p>
+                                    <p>간단한 GUI를 통해 리포지토리를 시각화하고 관리할 수 있기 떄문에 사용하고 있습니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Works -->
+        <section class="section ct Works" id="Works">
+            <div class="Works1_container">
+                <h1>WORKS</h1>
+                <div class="Item_container">
+                    <div class="Item_nav_prev" title="PREVIOUS PROJECT"></div>
+                    <div class="wi wi0 visible">
+                        <div class="Item_wrap">
+                            <div class="IMG_wrap">
+                                <div class="IMG_main" onclick="mainImgClick(0,0)"><img
+                                        src='./src/img/project_img/0_0.png' alt='프로젝트 이미지'></div>
+                                <div class="IMG_sub_wrap">
+                                    <div class="IMG_sub active" onclick="subImgClick(0,0)"><img
+                                            src='./src/img/project_img/0_0.png' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(0,1)"><img
+                                            src='./src/img/project_img/0_1.png' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(0,2, true)"><img class='mobileImg'
+                                            src='./src/img/project_img/0_2.png' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(0,3, true)"><img class='mobileImg'
+                                        src='./src/img/project_img/0_3.png' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(0,4, true)"><img class='mobileImg'
+                                        src='./src/img/project_img/0_4.png' alt='프로젝트 이미지'></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wi wi1">
+                        <div class="Item_wrap">
+                            <div class="IMG_wrap">
+                                <div class="IMG_main" onclick="mainImgClick(1,0)"><img
+                                        src='./src/img/project_img/1_0.png' alt='프로젝트 메인이미지'></div>
+                                <div class="IMG_sub_wrap">
+                                    <div class="IMG_sub active" onclick="subImgClick(1,0)"><img
+                                            src='./src/img/project_img/1_0.png' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(1,1)"><img
+                                            src='./src/img/project_img/1_1.png' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(1,2)"><img
+                                        src='./src/img/project_img/1_2.png' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(1,3, true)"><img class='mobileImg'
+                                            src='./src/img/project_img/1_3.png' alt='프로젝트 이미지'></div>
+                                </div>
+                            </div>
+                            <div class="info_wrap">
+                                <div class="info_title">PORTFOLIO</div>
+                                <div class="info_sub">개인프로젝트</div>
+                                <div class="info_main">JQuery와 JavaScript 를 이용해 만든 포트폴리오 입니다. Apple Store를 클론 코딩한 사이트 입니다.
+
+                                </div>
+                                <ul class="tag_wrap">
+                                    <li class="tag">Apple</li>
+                                    <li class="tag">JQuery</li>
+                                    <li class="tag">JavaScript</li>
+                                </ul>
+                                <div class="button_wrap">
+                                    <a href="#" target="_blank">
+                                        <div class="goto">사이트 바로가기</div>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <div class="more">GitHub</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wi wi2">
+                        <div class="Item_wrap">
+                            <div class="IMG_wrap">
+                                <div class="IMG_main" onclick="mainImgClick(2,0)"><img
+                                        src='./src/img/project_img/2_0.png' alt='프로젝트 메인이미지'></div>
+                                <div class="IMG_sub_wrap">
+                                    <div class="IMG_sub active" onclick="subImgClick(2,0)"><img
+                                            src='./src/img/project_img/2_0.png' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(2,1)"><img
+                                            src='./src/img/project_img/2_1.png' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(2,2, true)"><img class='mobileImg'
+                                            src='./src/img/project_img/2_2.png' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(2,3, true)"><img class='mobileImg'
+                                        src='./src/img/project_img/2_3.png' alt='프로젝트 이미지'></div>
+                                    <div class="IMG_sub" onclick="subImgClick(2,4, true)"><img class='mobileImg'
+                                        src='./src/img/project_img/2_4.png' alt='프로젝트 이미지'></div>
+                                </div>
+                            </div>
+                            <div class="info_wrap">
+                                <div class="info_title">Blue_Horizon</div>
+                                <div class="info_sub">팀 프로젝트</div>
+                                <div class="info_main">JQuery + AJAX + Spring + TomCat9 을 이용해 만든 팀 프로젝트입니다. AJAX를 이용하여 PHP를 통해 비동기적으로
+                                    서버에서 데이터를 CRUD 합니다.
+                                    <span onclick="moreButtonClick(2)">더보기</span>
+                                    <div class="more_wrap">
+                                        <p>···</p>
+                                        전반적인 프론트 작업을하였으며, vscode에서 작업 후 InteliJ에서 JSP로 변환 작업을 하였습니다.
+                                    </div>
+                                </div>
+                                <ul class="tag_wrap">
+                                    <li class="tag">JQuery</li>
+                                    <li class="tag">AJAX</li>
+                                    <li class="tag">JSp</li>
+                                    <li class="tag">SPRING</li>
+                                </ul>
+                                <div class="button_wrap">
+                                    <a href="#" target="_blank">
+                                        <div class="more">GitHub</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="Item_nav_next" title="NEXT PROJECT"></div>
+                    <div class="m_nav_wrap">
+                        <div class="prev"></div>
+                        <div class="next"></div>
+                    </div>
+                </div>
+                <ul class="Item_nav_button_wrap">
+                    <li id="nav0" class="active"></li>
+                    <li id="nav1"></li>
+                    <li id="nav2"></li>
+                </ul>
+                <div class="sizeUP">
+                    <div class="top">
+                        <div class="close"></div>
+                    </div>
+                    <div class="ct"></div>
+                </div>
+                
+            </div>
+            
+        </section>
+        <!-- Contact -->
+        <section class="section ct Contact" id="Contact">
+            <div class="Contact_container">
+                <div class="blend_background"></div>
+                <h1>CONTACT</h1>
+                <div class="Contact_wrap">
+                    <p>PHONE : 010. 3475. 8780</p>
+                    <p>E-MAIL : jegal12342@naver.com</p>
+                    <p><a href="https://github.com/jgmh99" target="_blank">GITHUB : https://github.com/jgmh99</a></p>
+                    
+                </div>
+                <ul class="social_wrap">
+                    <li><a href="#" target="_blank"><img src="src/img/github.png"
+                                alt="GITHUB"></a></li>
+                    <li><a href="#"><img src="src/img/instagram.png" alt="INSTAGRAM"></a></li>
+                    <li><a href="#"><img src="src/img/facebook.png" alt="FACEBOOK"></a></li>
+                </ul>
+             
+        </section>
+    </div>
+
+</body>
+
+<!-- Plugin : FullPage -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.css"
+    integrity="sha512-joJLRX4chQYCQlk0R4FXEgZHqsWA1hf4e+C+QKyi8fnfDm8FlEsNAVo+ByQhD19BrgVZGSOJKAQZa5M5gXDtpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.js"
+    integrity="sha512-rNf09cQHIWzD8BU37lIb3rInygeWXW2hVqJ7niVtTPXWuVR3aFiph1eFIeDiEQV8J45u0qfp7ng8I3TzJHY4Eg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Custom -->
+<script src="./js/topScrollbar.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
