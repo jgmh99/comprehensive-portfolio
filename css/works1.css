@@ -76,7 +76,7 @@
   margin-left: 100px;
   margin-right: 100px;
   transform: rotate(-90deg);
-  background: url(../../src/img/arrow_1.png) 50% 50% no-repeat;
+  background: url(../src/img/arrow_1.png) 50% 50% no-repeat;
   background-size: 80px 80px;
   filter: invert(100%);
   opacity: 0;
