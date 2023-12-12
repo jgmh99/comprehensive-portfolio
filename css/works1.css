@@ -737,6 +737,44 @@
 .Item_nav_button_wrap.visible {
   opacity: 1;
 }
+.Works1_container .Item_container .wi .Item_wrap .info_wrap .button_wrap .pdf_dwn {
+  position: relative;
+  height: 38px;
+  line-height: 38px;
+  padding-right: 20px;
+  padding-left: 47px;
+  opacity: 1;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  transition: 150ms;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.Works1_container .Item_container .wi .Item_wrap .info_wrap .button_wrap .pdf_dwn::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  
+  background: url(../src/img/pdf_icon.png)50% 50% no-repeat;
+  background-size: 22px 22px;
+  z-index: 10;
+}
+.Works1_container .Item_container .wi .Item_wrap .info_wrap .button_wrap .pdf_dwn.visible {
+  opacity: 1;
+}
+.Works1_container .Item_container .wi .Item_wrap .info_wrap .button_wrap .pdf_dwn:hover {
+  background-color: rgb(155, 155, 155);
+}
+.button_wrap .pdf_dwn {
+  width: 100% !important;
+}
+
 
 @keyframes Item_nav_prev {
   0% {
@@ -885,4 +923,14 @@
   .Works1_container .readme_container .readme_scroll::-webkit-scrollbar {
     display: none !important;
   }
+
+
+
+
+
+
+
+ 
+
+  
 }/*# sourceMappingURL=works1.css.map */
