@@ -224,6 +224,7 @@
 .Works1_container .Item_container .wi .Item_wrap .info_wrap .info_main span:hover {
   text-decoration: underline;
 }
+
 .Works1_container .Item_container .wi .Item_wrap .info_wrap .info_main .more_wrap {
   display: none;
 }

@@ -323,19 +323,20 @@ $('.sizeUP .ct, .sizeUP .top .close').click(() => {
     speed = defaultSpeed;
 })
 
+//프로젝트 추가 시 if (worksItem == 6) 숫자 + 1씩 해주셈 Line:327 ~ 370까지
 $('.Item_nav_next, .m_nav_wrap .next').click(() => {
     $('.wi .info_main .more_wrap').slideUp(150);
     $('.wi .info_main span').text('더보기');
     if (!isClick) {
         isClick = true;
-        if (worksItem == 5) {
+        if (worksItem == 6) {
             $('#nav' + worksItem).removeClass("active");
             $('.wi' + worksItem).fadeOut(250, "swing", () => {
                 $('.wi' + 0).stop().fadeIn(250, "swing", () => { worksItem = 0; isClick = false; });
                 $('#nav' + 0).addClass("active");
             });
         }
-        if (worksItem < 5) {
+        if (worksItem < 6) {
             $('#nav' + worksItem).removeClass("active");
             $('.wi' + worksItem).fadeOut(250, "swing", () => {
                 $('.wi' + (worksItem + 1)).stop().fadeIn(250, "swing", () => { worksItem++; isClick = false; });
@@ -351,8 +352,8 @@ $('.Item_nav_prev, .m_nav_wrap .prev').click(() => {
         if (worksItem == 0) {
             $('#nav' + worksItem).removeClass("active");
             $('.wi' + worksItem).fadeOut(250, "swing", () => {
-                $('.wi' + 5).stop().fadeIn(250, "swing", () => { worksItem = 5; isClick = false; });
-                $('#nav' + 5).addClass("active");
+                $('.wi' + 6).stop().fadeIn(250, "swing", () => { worksItem = 6; isClick = false; });
+                $('#nav' + 6).addClass("active");
             });
         }
         if (worksItem > 0) {
@@ -366,7 +367,7 @@ $('.Item_nav_prev, .m_nav_wrap .prev').click(() => {
 })
 
 
-for (let i = 0; i < 6; i++) {
+for (let i = 0; i < 7; i++) {
     $('#nav' + i).on('click', (event) => {
         if (!isClick) {
             isClick = true;
@@ -380,36 +381,3 @@ for (let i = 0; i < 6; i++) {
 
 // 갤러리 자동 이동
 $(".Visual_wrap").append($(".Visual_wrap ul").clone());
-
-
-
-// // const visualMove = () => {
-// //     $(".Visual_wrap").css({ left: `${leftValue}px` });
-// //     if ($(".Visual_wrap").offset().left <= -1 * $('.Visual_wrap ul').outerWidth()) {
-// //         leftValue = 0;
-// //     }
-// //     leftValue -= speed;
-// // }
-
-// $(".Visual_wrap").hover(() => {
-//     if(defaultSpeed !== 0)
-//     speed = 0.3;
-// }, () => {
-//     speed = defaultSpeed;
-// })
-
-
-
-// $('.Visual_wrap').on('mousedown', function () {
-//     speed = 0;
-// }).on('mouseup', function () {
-//     speed = 0.3;
-// }).on('mouseleave', function () {
-//     speed = defaultSpeed;
-// });
-
-// vMove = setInterval(() => visualMove(), 10);
-
-
-
-// console.clear();
